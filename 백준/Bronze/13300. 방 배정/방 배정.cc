@@ -21,8 +21,8 @@ int main(void) {
         s == 0 ? girl_v[y - 1] += 1 : boy_v[y - 1] += 1;
     }
     for (i = 0; i < 6; i++) {
-        ans += (girl_v[i] + 1) / 2;
-        ans += (boy_v[i] + 1) / 2;
+        ans += (girl_v[i] + (k - 1)) / k;
+        ans += (boy_v[i] + (k - 1)) / k;
     }
     cout << ans;
 }
